@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Reserva Tu Mesa | Las Vegas Restaurant</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div></div>
+                <a href="../index.html" class="logo"> <p> Las Vegas </p> <p>Restaurant</p> </a>
+                <div id="alert"></div>
+            </div>
+        </nav>
+        <main class="menu-container">
+            <a href="../index.html"> <div class="menu1"> Menu </div></a>
+            <a href="reservaTuMesa.html"> <div class="menu3"> Reserva tu mesa </div></a>
+            <a href="../index.html"> <div class="menu3"> Carrito </div></a>
+            <a href="iniciarSesion.html"> <div class="menu3"> Iniciar Sesion </div></a>
+        </main>
+    </header>
+
+    <section>
+        <div class="container-fluid justify-content">
+            <div class="row">
+                <div class="col-md-8 p-3">
+                    <h3>Formulario de Contacto</h3>
+                    <form id="form1">
+                        <div class="mb-3">
+                            <div class="d-flex">
+                                <label for="nombre" class="form-label col-6">Nombre</label>
+                                <div class="col-6" id="alertNombre"></div>
+                            </div>
+                            <input type="nombre" class="form-control" id="nombre">
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex ">
+                                <label for="email" class="form-label col-6">Email</label>
+                                <div class="col-6" id="alertEmail"></div>
+                            </div>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="d-flex ">
+                                <label for="telefono" class="form-label col-6">Numero de Contacto</label>
+                                <div class="col-6" id="alertTelefono"></div>
+                            </div>
+                            <input type="email" class="form-control" id="telefono">
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="contador" class="form-label">Ingrese la cantidad de personas</label>
+                                <div class="d-flex">
+                                    <button type="button" class="btn btn-dark col-1" id="resta" onclick="restar();">-</button>
+                                    <span><p class="conteo col-2" id="contador">1</p></span>
+                                    <button type="button" class="btn btn-dark col-1" id="suma" onclick="sumar();">+</button>
+                                    <div class="col-8" id="alertaContador"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-dark boton" id="solicitarReserva" onclick="validarDatos();">Solicitar Reserva</button>
+                        <div id="alertButton"> </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 class="contactanos"> Contactanos </h3>
+
+        <nav>
+            <div class="social">
+                <div class="instagram">
+                    <a href="https://www.instagram.com/?hl=es"> <img src="../src/img/Instagram.png" alt="LogoInstagram" width="40px" height="auto"> </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://es-la.facebook.com/"> <img src="../src/img/Facebook.png" alt="LogoFacebook" width="auto" height="40px"> </a>
+                </div>
+                <div class="whatsapp">
+                    <a href="https://web.whatsapp.com/"> <img src="../src/img/WhatsApp.png" alt="LogoWhatsapp" width="40px" height="auto"> </a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/?lang=es"> <img src="../src/img/Twitter.png" alt="LogoTwitter" width="40px" height="auto"> </a>
+                </div>
+                <div class="mail">
+                    <a href="https://outlook.live.com/owa/"> <img src="../src/img/Outlook.png" alt="LogoMail" width="40px" height="auto"> </a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

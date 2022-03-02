@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Inicia Sesion | Las Vegas Restaurant </title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div></div>
+                <a href="../index.html" class="logo"> <p> Las Vegas </p> <p>Restaurant</p> </a>
+                <div id="alert"></div>
+            </div>
+        </nav>
+        <main class="menu-container">
+            <a href="../index.html"> <div class="menu1"> Menu </div></a>
+            <a href="reservaTuMesa.html"> <div class="menu3"> Reserva tu mesa </div></a>
+            <a href="../index.html"> <div class="menu3"> Carrito </div></a>
+            <a href="iniciarSesion.html"> <div class="menu3"> Iniciar Sesion </div></a>
+        </main>
+    </header>
+
+    <section>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <a class="btn btn-dark" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >Agregar Producto</a>
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Eliminar Producto</button>
+                        <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" onclick="mostrarDatos();" id="mostrarDatos">Ver mesas reservadas</button>
+                    </p>
+                    <div class="row">
+                        <div class="col-12">
+                          <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div id="form1">
+                                    <div class="mb-3">
+                                        <div class="d-flex">
+                                            <label for="nombre" class="form-label col-6 justify-content-start"> Nombre del Producto </label>
+                                            <div class="col-6" id="alertNombreProducto"></div>
+                                        </div>
+                                        <input type="nombre" class="form-control col-6" id="nombreProducto">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="d-flex">
+                                            <label for="descripcion" class="form-label col-6 justify-content-start"> Descripcion del Producto </label>
+                                            <div class="col-6" id="alertDescripcionProducto"></div>
+                                        </div>
+                                        <input type="nombre" class="form-control col-6" id="descripcionProducto">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="d-flex">
+                                            <label for="precio" class="form-label col-6 justify-content-start"> Precio del Producto </label>
+                                            <div class="col-6" id="alertPrecioProducto"></div>
+                                        </div>
+                                        <input type="nombre" class="form-control col-6" id="precioProducto">
+                                    </div>
+
+                                    <button type="button" class="btn btn-dark boton" id="agregarPrducto" onclick="agregarPrducto();"> Guardar </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <div class="card card-body" id="data">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 class="contactanos"> Contactanos </h3>
+
+        <nav>
+            <div class="social">
+                <div class="instagram">
+                    <a href="https://www.instagram.com/?hl=es"> <img src="../src/img/Instagram.png" alt="LogoInstagram" width="40px" height="auto"> </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://es-la.facebook.com/"> <img src="../src/img/Facebook.png" alt="LogoFacebook" width="auto" height="40px"> </a>
+                </div>
+                <div class="whatsapp">
+                    <a href="https://web.whatsapp.com/"> <img src="../src/img/WhatsApp.png" alt="LogoWhatsapp" width="40px" height="auto"> </a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/?lang=es"> <img src="../src/img/Twitter.png" alt="LogoTwitter" width="40px" height="auto"> </a>
+                </div>
+                <div class="mail">
+                    <a href="https://outlook.live.com/owa/"> <img src="../src/img/Outlook.png" alt="LogoMail" width="40px" height="auto"> </a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
